@@ -1,0 +1,57 @@
+.app{
+  text-align: center;
+  background-color: #002333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.Image {
+  position:relative;
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 100%;
+}
+.programSection {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  position: relative;
+  display: block;
+  margin-bottom: 5px;;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 100%;
+  background-color: rgba(5, 48, 71, 0.4);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.programSection:hover .overlay {
+  width: 50%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
