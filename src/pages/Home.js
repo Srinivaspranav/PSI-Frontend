@@ -92,7 +92,7 @@ const ClubCard = ({ imageSrc, clubName }) => {
 const MainContent = () => (
   <main className='main'>
     <ImageSlider />
-    <h1>UPCOMING EVENTS</h1>
+    <h1 style={{marginTop:'3vw'}}>UPCOMING EVENTS</h1>
     <div className='eventsSection'>
       <EventCard
         title="Event 1"
