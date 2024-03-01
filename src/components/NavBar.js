@@ -15,7 +15,7 @@ const NavBar = () => {
         style={{ height: '30px', width: '140px' }}  
       />
     </div>
-    <div className="menu" onClick={() =>{
+    <div className="menu"  onClick={() =>{
       setMenuOpen(!menuOpen);
     }}>
       <span></span>

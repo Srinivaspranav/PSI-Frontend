@@ -29,7 +29,7 @@
     margin: 0;
   }
   
-  .navLi {
+  .nav Li {
     padding: 0;
     margin: 0;
     border: none;
@@ -37,7 +37,7 @@
     cursor: pointer;
   }
   
-  .navLi {
+  .nav Li {
     --primary-color: #111;
     --hovered-color: #ffffff;
     position: relative;
@@ -49,14 +49,14 @@
     margin-right: 25px;
   }
   
-  .navLi p {
+  .nav Li p {
     margin: 0;
     position: relative;
     font-size: 20px;
     color: var(--primary-color);
   }
   
-  .navLi::after {
+  .nav Li::after {
     position: absolute;
     content: "";
     width: 0;
@@ -67,7 +67,7 @@
     transition: 0.3s ease-out;
   }
   
-  .navLi p::before {
+  .nav Li p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "Subscribe";
@@ -78,11 +78,11 @@
     transition: 0.3s ease-out;
   }
   
-  .navLi:hover::after {
+  .nav Li:hover::after {
     width: 100%;
   }
   
-  .navLi:hover p::before {
+  .nav Li:hover p::before {
     width: 100%;
   }
   
@@ -115,7 +115,6 @@
     display: none;
     position: absolute;
     top: 0.75em;
-    
     right:0.5rem;
     flex-direction: column;
     justify-content: space-between;
@@ -125,50 +124,70 @@
   nav .menu span {
     height: 0.4rem;
     width: 100%;
-    background-color: #002333;
+    background-color: #eee;
     border-radius: 0.2rem;
   }
   
  @media only screen and (max-width: 480px) {
   .logo {
-    margin-top: -1px;
-    padding-right: 44vw;
+    left:-25vw;
+    top:-10vw;
     height: 119px;
     width: 66px;
     position: relative;
   }
-  .loginButton
-  {
-    display:none;
-
-  }
-  nav .menu {
+  .loginButton {
+    font-size: 13px;
+    padding: 0.5em 1em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #002333;
+    top: -19vw;
+    left:60vw;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+   }
+   
+   .loginButtonhover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+   }
+   
+   .loginButton:active {
+    transform: translate(0em, 0.2em);
+   }
+  .nav .menu {
     display: flex;
-    margin-top: 20px;
+    top: 5vw;
     z-index: 10;
   }
-  nav{
+  .nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
   }
-  nav ul{
+  .nav ul{
     display: none;
     flex-direction: column;
     width : 100%;
-    margin-bottom: 0.25rem;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
     
   }
-  nav ul.open {
+  .nav ul.open {
     display: flex;
     background-color: #002333;
+    color: white;
+  
   }
-  nav ul Li{
+  .nav ul Li{
     width: 100%;
     text-align: center;
     align-items: center;
+    background-color: #002333;
   }
-  nav ul Li a{
-    margin: 0.2rem 0.5rem;
+  .nav ul Li a{
+    margin: 1rem 2rem;
   }
  }
