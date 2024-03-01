@@ -7,7 +7,7 @@ import '../Style/scrollbar.css';
 
 
 const Clubs = () => (
-  <div className="app">
+  <div className="appclubs">
     <NavBar />
     {/* <div className='headingcontainer'>
       <div className='heading'>Innovation Club.</div>

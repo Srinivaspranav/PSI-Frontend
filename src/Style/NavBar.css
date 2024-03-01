@@ -1,193 +1,152 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+li {
+  --primary-color: #111;
+  --hovered-color: #ffffff;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+  margin-right: 25px;
+}
+li p{
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+li ::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+li p::before{
+  position: absolute;
+  content: "Subscribe";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+li:hover::after{
+  width: 100%;
+}
+li:hover p::before{
+  width:100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  margin-top: 25px;
+  height: 50px;
+  width: 100px;
+  position: relative;
+}
+
+.loginButton {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  left:20;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: #002333;
+  color: white;
+  border-radius: 4px;
+ }
+ .loginButtonhover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ .loginButton:active {
+  transform: translate(0em, 0.2em);
+ }
+ 
 .nav {
-    background-color: #053047;
-    color: white;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    width:100vw;
-    position: sticky;
-    top: 0px;
-    z-index: 10;
-  }
-  
-  .logo {
-    margin-top: 25px;
-    padding-left: 80px;
-    height: 50px;
-    width: 100px;
-    position: relative;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  
-  .nav Li {
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100vw;
+  background: #063049;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav_item{
+  justify-content: space-between;
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0rem;
+}
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.5rem;
+  right:4vw;
+  position: relative;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
     cursor: pointer;
   }
-  
-  .nav Li {
-    --primary-color: #111;
-    --hovered-color: #ffffff;
-    position: relative;
-    display: flex;
-    font-weight: 600;
-    font-size: 20px;
-    gap: 0.5rem;
-    align-items: center;
-    margin-right: 25px;
-  }
-  
-  .nav Li p {
-    margin: 0;
-    position: relative;
-    font-size: 20px;
-    color: var(--primary-color);
-  }
-  
-  .nav Li::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    left: 0;
-    bottom: -7px;
-    background: var(--hovered-color);
-    height: 2px;
-    transition: 0.3s ease-out;
-  }
-  
-  .nav Li p::before {
-    position: absolute;
-    /*   box-sizing: border-box; */
-    content: "Subscribe";
-    width: 0%;
-    inset: 0;
-    color: var(--hovered-color);
-    overflow: hidden;
-    transition: 0.3s ease-out;
-  }
-  
-  .nav Li:hover::after {
-    width: 100%;
-  }
-  
-  .nav Li:hover p::before {
-    width: 100%;
-  }
-  
-
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  .loginButton {
-    font-size: 17px;
-    padding: 0.5em 2em;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    background: #002333;
-    color: white;
-    border-radius: 4px;
-   }
-   
-   .loginButtonhover {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
-   }
-   
-   .loginButton:active {
-    transform: translate(0em, 0.2em);
-   }
-   
-  nav .menu {
-    display: none;
-    position: absolute;
-    top: 0.75em;
-    right:0.5rem;
+  .nav__menu {
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    height: 80vh;
+    width: 50vw;
+    background: #063049;
     flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
-  }
-  nav .menu span {
-    height: 0.4rem;
-    width: 100%;
-    background-color: #eee;
-    border-radius: 0.2rem;
-  }
-  
- @media only screen and (max-width: 480px) {
-  .logo {
-    left:-25vw;
-    top:-10vw;
-    height: 119px;
-    width: 66px;
-    position: relative;
-  }
-  .loginButton {
-    font-size: 13px;
-    padding: 0.5em 1em;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    background: #002333;
-    top: -19vw;
-    left:60vw;
-    color: white;
-    border-radius: 4px;
-    position: relative;
-   }
-   
-   .loginButtonhover {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
-   }
-   
-   .loginButton:active {
-    transform: translate(0em, 0.2em);
-   }
-  .nav .menu {
-    display: flex;
-    top: 5vw;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
     z-index: 10;
   }
-  .nav{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-  .nav ul{
-    display: none;
-    flex-direction: column;
-    width : 100%;
-    background-color: #ffffff;
-    margin-bottom: 2rem;
-    
-  }
-  .nav ul.open {
-    display: flex;
-    background-color: #002333;
-    color: white;
-  
-  }
-  .nav ul Li{
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    background-color: #002333;
-  }
-  .nav ul Li a{
-    margin: 1rem 2rem;
-  }
- }
+}
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
