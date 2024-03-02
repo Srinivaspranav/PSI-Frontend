@@ -264,6 +264,7 @@
     flex: 1;
     color: #eee;
     padding: 0;
+    width: 100vw;
     overflow: hidden;
   }
   
