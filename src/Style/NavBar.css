@@ -90,7 +90,7 @@ a {
   width: 100vw;
   background: #063049;
   position: sticky;
-  top: 0;
+  top: 0%;
   z-index: 10;
 }
 
@@ -101,7 +101,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0rem;
 }
 .nav__toggler {
   display: none;
@@ -110,7 +109,7 @@ a {
   width: 2.5rem;
   height: 0.3rem;
   margin: 0.5rem;
-  right:4vw;
+  right: 4vw;
   position: relative;
   background: rgb(204, 204, 204);
   transition: 0.3s ease-in;
@@ -121,32 +120,42 @@ a {
     display: block;
     cursor: pointer;
   }
+  .loginButton {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    left:50vw;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #002333;
+    color: white;
+    border-radius: 4px;
+   }
   .nav__menu {
     position: fixed;
-    top: 10vh;
+    top: 9vh;
     right: 0;
-    height: 80vh;
-    width: 50vw;
+    height: 100vh;
+    width: 100vw;
     background: #063049;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
     z-index: 10;
+    opacity:85%;
   }
 }
-/* Active Class */
+
 .nav__active {
   transform: translateX(0%);
 }
 
-/* Toggle Icon Animation */
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-4px, 5px);
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
 .toggle .line2 {
   opacity: 0;
 }
 .toggle .line3 {
-  transform: rotate(45deg) translate(-4px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
 }
