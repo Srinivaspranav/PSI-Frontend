@@ -34,7 +34,7 @@ const AboutUs = () => (
     </div>
 
     {/* OurWorksSection */}
-    <div className="ourWorksSection">
+    {/* <div className="ourWorksSection">
       <h2 className="worksHeading">Our Works</h2>
       <div className="worksContainer">
         {[1, 2, 3, 4, 5, 6].map((index) => (
@@ -46,7 +46,7 @@ const AboutUs = () => (
         ))}
       </div>
     </div>
-    <div><hr style={{ borderColor: "#00FF84", width: "95vw", }} /></div>
+    <div><hr style={{ borderColor: "#00FF84", width: "95vw", }} /></div> */}
 
     {/* OurFounderWordsSection */}
     <div className="ourFounderWordsSection">
