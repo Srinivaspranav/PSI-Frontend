@@ -21,6 +21,7 @@ const LazyContact = React.lazy(() => import('./pages/contactus'))
 const LazyDash = React.lazy(() => import('./pages/Dashboard'))
 const LazyForgot = React.lazy(() => import('./pages/ForgotPassword'))
 const LazyReset = React.lazy(() => import('./pages/ResetPassword'))
+const LazyEnroll = React.lazy(() => import('./pages/enrollment'))
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/login" element={<LazyLogin />} />
           <Route path="/reset" element={<LazyReset />} />
           <Route path="/forgot" element={<LazyForgot />} />
+          <Route path="/enroll" element={<LazyEnroll />} />
 
         </Routes>
       </BrowserRouter>
