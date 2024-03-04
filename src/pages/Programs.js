@@ -4,6 +4,7 @@ import '../pages/Login';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import '../Style/scrollbar.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,9 +41,10 @@ import '../Style/scrollbar.css';
 //     </div>
 //   );
 // };
+
 const Workshops = () => {
   return (
-    <div>
+    <div className='workshop_section'>
       <article className="card_program">
         <div className="temporary_text">
           {/* Place image here */}
@@ -51,6 +53,7 @@ const Workshops = () => {
           <span className="card_title">This is a Title</span>
           <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
           <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
+          <Link to="/" className="redirect">Learn More</Link>
         </div>
       </article>
 
@@ -62,6 +65,61 @@ const Workshops = () => {
           <span className="card_title">This is a Title</span>
           <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
           <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
+          <Link to="/" className="redirect">Learn More</Link>
+        </div>
+      </article>
+
+      <article className="card_program">
+        <div className="temporary_text">
+          {/* Place image here */}
+        </div>
+        <div className="card_content">
+          <span className="card_title">This is a Title</span>
+          <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
+          <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
+          <Link to="/" className="redirect">Learn More</Link>
+        </div>
+      </article>
+    </div>
+  );
+};
+
+const Courses = () => {
+  return (
+    <div className='courses_section'>
+      <article className="card_program">
+        <div className="temporary_text">
+          {/* Place image here */}
+        </div>
+        <div className="card_content">
+          <span className="card_title">This is a Title</span>
+          <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
+          <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
+          <Link to="/" className="redirect">Learn More</Link>
+        </div>
+      </article>
+
+      <article className="card_program">
+        <div className="temporary_text">
+          {/* Place image here */}
+        </div>
+        <div className="card_content">
+          <span className="card_title">This is a Title</span>
+          <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
+          <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
+          <Link to="/" className="redirect">Learn More</Link>
+        </div>
+      </article>
+
+      <article className="card_program">
+        <div className="temporary_text">
+          {/* Place image here */}
+        </div>
+        <div className="card_content">
+          <span className="card_title">This is a Title</span>
+          <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
+          <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
+          <Link to="/" className="redirect">Learn More</Link>
         </div>
       </article>
     </div>
@@ -73,13 +131,12 @@ const Workshops = () => {
 
 
 
-
 const Missions = () => (
   <div className="app">
     <div>
       <NavBar />
-      
       <Workshops />
+      <Courses />
      
       <Footer />
     </div>

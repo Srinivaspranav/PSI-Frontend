@@ -54,15 +54,25 @@
   transform: translate(-50%, -50%);
   white-space: nowrap;
 } */
-
+.workshop_section{
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+.courses_section{
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
 .card_program {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 450px;
+  height: 350px;
   color: #2e2d31;
   background: #131313;
   overflow: hidden;
   border-radius: 20px;
+  margin:30px;
 }
 
 .temporary_text {
@@ -80,10 +90,12 @@
   position: absolute;
   left: 0;
   bottom: 0;
+    /* edit the width to fit card */
   width: 100%;
   padding: 20px;
   background: #f2f2f2;
   border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
   transform: translateY(150px);
   transition: transform .25s;
 }
@@ -108,23 +120,43 @@
 .card_subtitle {
   display: block;
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .card_description {
   font-size: 14px;
-  opacity: 0;
+  opacity: 50%;
   transition: opacity .5s;
 }
 
 .card_program:hover .card_content {
-  transform: translateY(0);
+  transform: translateY(0px);
 }
 
 .card_program:hover .card_description {
-  opacity: 1;
+  opacity: 95%;
   transition-delay: .25s;
 }
+.redirect{
+  color:#002333;
+  font-size: 20px;
+  margin-top:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
