@@ -24,6 +24,7 @@ const AboutUs = () => (
         <p className="introductionContent">
           Welcome to Dr. Palamsetty Innovations, where we are dedicated to empowering students in their academic journey and beyond. Founded with a passion for education and innovation, we strive to provide comprehensive support to students, helping them excel in their studies and prepare for successful careers.
         </p>
+        
         <p className="introductionContent">
           At Dr. Palamsetty Innovations, we understand the importance of staying ahead in today's rapidly evolving world. That's why we offer a range of services, including academic assistance, internship opportunities, courses, workshops, and seminars.
         </p>
@@ -50,6 +51,9 @@ const AboutUs = () => (
 
     {/* OurFounderWordsSection */}
     <div className="ourFounderWordsSection">
+    <div className="founderWordsImageContainer1">
+          <img className="founderWordsImage" src="https://via.placeholder.com/600x400" alt="Our Founder's Words" />
+        </div>
       <div className="founderWordsHeading">
         <h2>Our Founder's Words</h2>
       </div>
@@ -57,7 +61,7 @@ const AboutUs = () => (
         <p className="founderWordsParagraph">
           Welcome to Dr. Palamsetty Innovations, where we are dedicated to empowering students in their academic journey and beyond. Founded with a passion for education and innovation, we strive to provide comprehensive support to students, helping them excel in their studies and prepare for successful careers.
         </p>
-        <div className="founderWordsImageContainer">
+        <div className="founderWordsImageContainer2">
           <img className="founderWordsImage" src="https://via.placeholder.com/600x400" alt="Our Founder's Words" />
         </div>
       </div>
@@ -70,7 +74,7 @@ const AboutUs = () => (
         <img className="visionImage" src="https://via.placeholder.com/600x400" alt="Our Vision" />
       </div>
       <div className="visionContent">
-        <h2>Our Vision</h2>
+        <h2 className="visionheading">Our Vision</h2>
         <p className="visionParagraph">
           Welcome to Dr. Palamsetty Innovations, where we are dedicated to empowering students in their academic journey and beyond. Founded with a passion for education and innovation, we strive to provide comprehensive support to students, helping them excel in their studies and prepare for successful careers.
           <br />
@@ -82,7 +86,7 @@ const AboutUs = () => (
 
     {/* ValuesSection */}
     <div className="ourValuesSection">
-      <h2>Our Values</h2>
+      < h2 className="valuesheading">Our Values</h2>
       <div className="valuesContainer">
         {[1, 2, 3, 4, 5, 6].map((index) => (
           <div key={index} className="value">
