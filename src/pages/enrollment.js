@@ -15,7 +15,7 @@ const Enrollment = () => {
           <div className='form-field'><p>Email ID:</p><input type='text' /></div>
           <div className='form-field'><p>Institution:</p><input type='text' /></div>
           <div className='form-field'><p>Phone Number:</p><input type='text' /></div>
-          <div className='form-field'><p>Country:</p><input type='text' /></div>
+          <div className='form-field'><p>City:</p><input type='text' /></div>
           <div className='form-field'><p>Select Clubs:</p><input type='dropbox' /></div><br></br>
           <textarea
             style={{

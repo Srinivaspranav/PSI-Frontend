@@ -41,6 +41,20 @@ import { Link } from 'react-router-dom';
 //     </div>
 //   );
 // };
+// const Featured = () => {
+//   return (
+//     <div className='Featured_section'>
+//     <div className="card flex-row">
+//       <div className="card-body">
+//         <h4 className="card-title h5 h4-sm">Right image</h4>
+//         <p className="card-text">Example text</p>
+//       </div>
+//       <img className="card-img-right example-card-img-responsive" src="/postboot/assets/img/thumbnail.jpg" alt="Card Image" />
+//     </div>
+//     </div>
+//   );
+
+// };
 
 const Workshops = () => {
   return (
@@ -53,7 +67,7 @@ const Workshops = () => {
           <span className="card_title">This is a Title</span>
           <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
           <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
-          <Link to="/" className="redirect">Learn More</Link>
+          <button className='button-program'>Enroll Now</button>
         </div>
       </article>
 
@@ -65,7 +79,7 @@ const Workshops = () => {
           <span className="card_title">This is a Title</span>
           <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
           <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
-          <Link to="/" className="redirect">Learn More</Link>
+          <button className='button-program'>Enroll Now</button>
         </div>
       </article>
 
@@ -77,7 +91,7 @@ const Workshops = () => {
           <span className="card_title">This is a Title</span>
           <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
           <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
-          <Link to="/" className="redirect">Learn More</Link>
+          <button className='button-program'>Enroll Now</button>
         </div>
       </article>
     </div>
@@ -95,7 +109,7 @@ const Courses = () => {
           <span className="card_title">This is a Title</span>
           <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
           <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
-          <Link to="/" className="redirect">Learn More</Link>
+          <button className='button-program'>Enroll Now</button>
         </div>
       </article>
 
@@ -107,7 +121,7 @@ const Courses = () => {
           <span className="card_title">This is a Title</span>
           <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
           <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
-          <Link to="/" className="redirect">Learn More</Link>
+          <button className='button-program'>Enroll Now</button>
         </div>
       </article>
 
@@ -119,7 +133,7 @@ const Courses = () => {
           <span className="card_title">This is a Title</span>
           <span className="card_subtitle">This is a subtitle of this page. Let us see how it looks on the Web.</span>
           <p className="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur? Labore minus soluta consequatur placeat.</p>
-          <Link to="/" className="redirect">Learn More</Link>
+          <button className='button-program'>Enroll Now</button>
         </div>
       </article>
     </div>
@@ -135,7 +149,9 @@ const Missions = () => (
   <div className="app">
     <div>
       <NavBar />
+       <h1>WORKSHOPS</h1>
       <Workshops />
+      <h1>COURSES</h1>
       <Courses />
      
       <Footer />
