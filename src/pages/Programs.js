@@ -46,7 +46,7 @@ const Featured = () => {
     <div className="eventsSection">
       <div className="eventCard">
         <div className="eventCardContent">
-          <h3 className="eventTitle">Mobile App Development </h3>
+          <h3 className="eventTitle">Mobile App Development By Flutter </h3>
           <p className="eventDescription">Event description goes here.</p>
           <button className='button-feature'>Enroll Now  </button>
         </div>
