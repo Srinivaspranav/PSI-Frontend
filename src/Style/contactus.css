@@ -59,8 +59,8 @@
 }
 
 .verticalBox {
-  height: 90vh; /* Adjust the height as needed */
-  width: 20vw; /* Adjust the width as needed */
+  height: 130vh; /* Adjust the height as needed */
+  width: 30vw; /* Adjust the width as needed */
   background-color: #051e29;
   position: relative ;
   left: 0;
@@ -103,8 +103,45 @@ input[type='textarea']::placeholder {
   top: 0px;
   left: -11.5%;
 }
-.submit{
-  background-color: #00ff84;
-  border-radius: 10px;
-
-}
+.submit {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 7px;
+  font-weight: 1000;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 5em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+.submit:disabled {
+  pointer-events: none;
+ }
+ 
+.submit:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+.submit:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }

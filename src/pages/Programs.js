@@ -41,20 +41,21 @@ import { Link } from 'react-router-dom';
 //     </div>
 //   );
 // };
-// const Featured = () => {
-//   return (
-//     <div className='Featured_section'>
-//     <div className="card flex-row">
-//       <div className="card-body">
-//         <h4 className="card-title h5 h4-sm">Right image</h4>
-//         <p className="card-text">Example text</p>
-//       </div>
-//       <img className="card-img-right example-card-img-responsive" src="/postboot/assets/img/thumbnail.jpg" alt="Card Image" />
-//     </div>
-//     </div>
-//   );
+const Featured = () => {
+  return (
+    <div className="eventsSection">
+      <div className="eventCard">
+        <div className="eventCardContent">
+          <h3 className="eventTitle">Mobile App Development </h3>
+          <p className="eventDescription">Event description goes here.</p>
+          <button className='button-feature'>Enroll Now  </button>
+        </div>
+        <img className="eventImage" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205787286873047080/12.jpg?ex=65f5536b&is=65e2de6b&hm=c79f899a279502de551372457f07b79a73acf7a53ad2a1088fd9ed313dc6e75a&" alt="Event Image" />
+      </div>
+    </div>
+  );
 
-// };
+};
 
 const Workshops = () => {
   return (
@@ -149,6 +150,7 @@ const Missions = () => (
   <div className="app">
     <div>
       <NavBar />
+      <Featured />
        <h1>WORKSHOPS</h1>
       <Workshops />
       <h1>COURSES</h1>
