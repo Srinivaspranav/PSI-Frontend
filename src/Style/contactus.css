@@ -103,7 +103,7 @@ input[type='textarea']::placeholder {
   top: 0px;
   left: -11.5%;
 }
-.submit {
+/* .submit {
   appearance: none;
   background-color: transparent;
   border: 0.125em solid #1A1A1A;
@@ -144,4 +144,25 @@ input[type='textarea']::placeholder {
 .submit:active {
   box-shadow: none;
   transform: translateY(0);
- }
+ } */
+ .submit {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 12px;
+  border-radius: 0.5em;
+  position: relative;
+  top:10px;
+  /* background: #e8e8e8; */
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+}
+
+.submit:hover {
+  border: 1px solid white;
+}
+
+.submit:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
