@@ -6,10 +6,11 @@ const Footer = () => (
       <div className="contact-info">
         <h2>Contact Us</h2>
         <ul>
-          <li> Company Name: ABC Corporation</li>
-          <li> Email: info@abccorp.com</li>
-          <li> Phone: (555) 123-4567</li>
-          <li> Address: 123 Main Street, Cityville, State, 12345</li>
+          <li>Company Name: ABC Corporation</li>
+          <li>Email: info@abccorp.com</li>
+          <li>Phone: (555) 123-4567</li>
+          <li>Address: 123 Main Street, Cityville, State, 12345</li>
+
         </ul>
       </div>
       <div className="menu">

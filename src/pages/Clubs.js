@@ -7,7 +7,7 @@ import '../Style/scrollbar.css';
 
 
 const Clubs = () => (
-  <div className="app">
+  <div className="appclubs">
 
     <NavBar />
 

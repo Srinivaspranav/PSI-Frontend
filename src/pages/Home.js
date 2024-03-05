@@ -113,7 +113,7 @@ const MainContent = () => (
 
 
 
-    <h1>Our Programmes</h1>
+    <h1>Our PROGRAMMES</h1>
     <ProgramGrid />
 
 

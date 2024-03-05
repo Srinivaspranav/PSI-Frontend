@@ -1,223 +1,149 @@
-.nav {
-    background-color: #053047;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    width:100vw;
-    position: sticky;
-    top: 0px;
-    z-index: 10;
-  }
-  
-  .logo {
-    margin-top: 25px;
-    left: 80px;
-    height: 50px;
-    width: 100px;
-    position: relative;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  
-  .navLi {
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
-  .navLi {
-    --primary-color: #111;
-    --hovered-color: #ffffff;
-    position: relative;
-    display: flex;
-    font-weight: 600;
-    font-size: 20px;
-    gap: 0.5rem;
-    align-items: center;
-    margin-right: 25px;
-  }
-  
-  .navLi p {
-    margin: 0;
-    position: relative;
-    font-size: 20px;
-    color: var(--primary-color);
-  }
-  
-  .navLi::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    left: 0;
-    bottom: -7px;
-    background: var(--hovered-color);
-    height: 2px;
-    transition: 0.3s ease-out;
-  }
-  
-  .navLi p::before {
-    position: absolute;
-    /*   box-sizing: border-box; */
-    content: "Subscribe";
-    width: 0%;
-    inset: 0;
-    color: var(--hovered-color);
-    overflow: hidden;
-    transition: 0.3s ease-out;
-  }
-  
-  .navLi:hover::after {
-    width: 100%;
-  }
-  
-  .navLi:hover p::before {
-    width: 100%;
-  }
-  
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+li {
+  --primary-color: #111;
+  --hovered-color: #ffffff;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+  margin-right: 25px;
+}
+li p{
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+li ::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+li p::before{
+  position: absolute;
+  content: "Subscribe";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+li:hover::after{
+  width: 100%;
+}
+li:hover p::before{
+  width:100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  margin-top: 25px;
+  height: 50px;
+  width: 100px;
+  position: relative;
+}
 
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  .loginButton {
-    background-color: #002333;
-    color: #00ff84;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-  nav .menu {
-    display: none;
-    position: absolute;
-    top: 0.75em;
-    
-    right:0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
-  }
-  nav .menu span {
-    height: 0.4rem;
-    width: 100%;
-    background-color: #002333;
-    border-radius: 0.2rem;
-  }
+.loginButton {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  right: 20px;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: #002333;
+  color: white;
+  border-radius: 4px;
+ }
+ .loginButtonhover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
  
-    
- @media only screen and (max-width: 768px) {
-  .logo {
-    margin-top: 6px;
-    padding-left: 18vw;
-    padding-right: 0vw;
-    height: 50px;
-    width: 50px;
-    top:-20%;
-    left:-60%;
-    position: relative;
-  }
-  .loginButton
-  {
-    display:none;
-
-  }
-  nav .menu {
-    display: flex;
-    margin-top: 7px;
-    left:90vw;
-    z-index: 10;
-  }
-  nav{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-  nav ul{
-    display: none;
-    flex-direction: column;
-    width : 100%;
-    margin-bottom: 0.5rem;
-  }
-  nav ul.open {
-    display: flex;
-    background-color: #002333;
-  }
-  nav ul Li{
-    width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-  nav ul Li a{
-    margin: 0.2rem 0.5rem;
-  }
-
-
-
-
-
+ .loginButton:active {
+  transform: translate(0em, 0.2em);
  }
+ 
+.nav_item{
+  justify-content: space-between;
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.5rem;
+  right: 4vw;
+  position: relative;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
 
-
-
-
-
- @media only screen and (max-width: 480px) {
-  .logo {
-    margin-top: 6px;
-    height: 50px;
-    width: 50px;
-    top:-20%;
-    right:10vw;
-    position: relative;
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
   }
-  .loginButton
-  {
-    display:none;
-
-  }
-  
-  nav .menu {
-    display: flex;
-    margin-top: 7px;
-    margin-left: 85vw;
-    left: 0;
+  .loginButton {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    left:50vw;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #002333;
+    color: white;
+    border-radius: 4px;
+   }
+  .nav__menu {
+    position: fixed;
+    top: 9vh;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #063049;
+    flex-direction: column;
     z-index: 10;
+    opacity:85%;
   }
-  nav{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-  nav ul{
-    display: none;
-    flex-direction: column;
-    width : 100%;
-    margin-bottom: 0.5rem;
-  }
-  nav ul.open {
-    display: flex;
-    background-color: #002333;
-  }
-  nav ul Li{
-    width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-  nav ul Li a{
-    margin: 0.2rem 0.5rem;
-  }
- }
+
+}
+
+.nav__active {
+  transform: translateX(0%);
+}
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
