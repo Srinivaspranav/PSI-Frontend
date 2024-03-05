@@ -82,6 +82,18 @@ a {
   transform: translate(0em, 0.2em);
  }
  
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100vw;
+  background: #053047;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+}
+
 .nav_item{
   justify-content: space-between;
 }
@@ -126,10 +138,11 @@ a {
     width: 100vw;
     background: #063049;
     flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
     z-index: 10;
     opacity:85%;
   }
-
 }
 
 .nav__active {
@@ -146,4 +159,3 @@ a {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
 }
-
