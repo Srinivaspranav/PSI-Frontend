@@ -51,22 +51,22 @@ const EventCard = ({ title, description, imageUrl }) => (
 
 const ProgramGrid = () => (
   <div className='programGrid'>
-    <div className='programRow'>
+    <div className='programRow1'>
       <div className='programCard'>
         <img alt="Program 1" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205763020190384198/5.png?ex=65d98d52&is=65c71852&hm=b4109f5252b78111b15bc7288d97574bf5f072cd83428a3ce0f84a49cc364d73&" className='programImage' />
         <div className='programName'>Courses</div>
       </div>
-      <div className='programCard'>
+      <div className='programCard pc2'>
         <img alt="Program 2" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205763020463149106/6.png?ex=65d98d52&is=65c71852&hm=31cb1a34d1bd095481029b17d2e52ea055a468b91cb389a4789500f41e646c89&" className='programImage' />
         <div className='programName'>Workshops</div>
       </div>
     </div>
-    <div className='programRow'>
-      <div className="programCard">
+    <div className='programRow2'>
+      <div className="programCard pc3">
         <img alt="Program 3" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205763020731453440/7.png?ex=65d98d52&is=65c71852&hm=d1ddb5fd6482ae5ec26a42643ab3a7d3143c02fb65de715c2429b5baf6b6f06a&" className=" programImage" />
         <div className='programName'>Internships</div>
       </div>
-      <div className='programCard'>
+      <div className='programCard pc4'>
         <img alt="Program 4" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205763021046030356/8.png?ex=65d98d52&is=65c71852&hm=0f5c25b778feaaaaff192e1d2317271f0f973466c7d9b141828e1940ea246890&" className=" programImage" />
         <div className='programName'>Webinars</div>
       </div>
@@ -136,8 +136,7 @@ const MainContent = () => (
 );
 
 const AboutSection = () => (
-  <div>
-    <div className='aboutSection'>
+    <div className='aboutsection'>
       <div className='aboutSection1'>
         <div className='aboutSection2'>
         <img
@@ -157,7 +156,7 @@ const AboutSection = () => (
         />
       </div>
     </div>
-  </div>
+
 
 
 );

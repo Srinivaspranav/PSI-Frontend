@@ -8,25 +8,27 @@ import '../Style/scrollbar.css';
 
 const Clubs = () => (
   <div className="app">
+
     <NavBar />
+
     {/* <div className='headingcontainer'>
       <div className='heading'>Innovation Club.</div>
       <div className='heading'>Technology Club.</div>
       <div className='heading'>R & D Club.</div>
     </div> */}
     {/* <hr style={{borderColor:"#00FF84",width:"99%"}}/>  */}
+
     <div className="sliderContainers">
       <p>"I am always doing that which I cannot do, in order that I may learn how to do it."</p>
       <p style={{ marginTop: "0% ", marginLeft: "55%" }}>- Pablo Picasso</p>
     </div>
+
     <hr style={{ borderColor: "#00FF84", width: "99%" }} />
-    <div>
-      <div style={{
-        display: "flex",
-        marginLeft: "40%"
-      }}>
-        <p style={{ fontSize: "50px", color: "white" }}>Innovation Club.</p>
-        <button style={{ marginLeft: "37%", height: "50px", marginTop: "7%", backgroundColor: "orange", width: "120px" }}>Join Now</button>
+
+    <div className="innovationclub">
+      <div className="innovationheader">
+        <p className="iclubheading" style={{ fontSize: "40px", color: "white" }}>Innovation Club.</p>
+        <button className="iclubbutton" style={{ marginLeft: "37%", height: "50px", marginBottom: "1%", backgroundColor: "orange", width: "120px" }}>Join Now</button>
       </div>
       <div>
         <h1 className='para1' style={{ color: "white", textAlign: "left" }}>About the Club.</h1>
