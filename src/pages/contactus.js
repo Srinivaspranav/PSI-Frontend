@@ -16,7 +16,7 @@ const ContactUs = () => {
     <div className="appContact">
       <NavBar />
       <div className='pane'>
-        <div className="verticalBox">
+        <div className="verticalBox1">
           <img
             alt="Logo"
             src="https://cdn.discordapp.com/attachments/1205756212445192263/1207363674990313562/Dr.Palamsetty_Innovations123.png?ex=65df600b&is=65cceb0b&hm=d8811294349ee35313077b961c60da34b5a054821e87fd435d7ed27f448f3c38&"
@@ -24,17 +24,21 @@ const ContactUs = () => {
           /><br /><br /><br /><br /><br />
           <h1 style={{ color: "#01FF46" }}>Need help?</h1><br /><br />
           <p>Reach us out</p>
-          <p>Our cust omer support is very welcoming,we will do our best to help you!</p><br /><br /><br /><br />
+          <p>Our customer support is very welcoming,we will do our best to help you!</p><br /><br /><br /><br />
           <h1>Our Office</h1>
           <p>A Very nice office, A very nice city,A very nice Country, A very nice pincode.</p>
         </div>
+
+
         <div className="detailsSection">
           <div className='dbox'>
+
             <div className="detailsField"><p>Name:</p><input type='text' /></div>
             <div className="detailsField"><p>Email ID:</p><input type='text' /></div>
             <div className="detailsField"><p>Institution:</p><input type='text' /></div>
             <div className="detailsField"><p>Phone Number:</p><input type='text' /></div>
-            <div className="detailsField"><p>Country:</p><input type='text' /></div>
+           <div className="detailsField"><p>Country:</p><input type='text' /></div>
+         
             <textarea
             style={{
               height: "300px",
@@ -53,6 +57,19 @@ const ContactUs = () => {
             <button className='submit'>SUBMIT</button>
           </div>
         </div>
+
+        {/* <div className="verticalBox2">
+          <img
+            alt="Logo"
+            src="https://cdn.discordapp.com/attachments/1205756212445192263/1207363674990313562/Dr.Palamsetty_Innovations123.png?ex=65df600b&is=65cceb0b&hm=d8811294349ee35313077b961c60da34b5a054821e87fd435d7ed27f448f3c38&"
+            style={{ height: '50px', width: '150px' }}
+          /><br /><br /><br /><br /><br />
+          <h1 style={{ color: "#01FF46" }}>Need help?</h1><br /><br />
+          <p>Reach us out</p>
+          <p>Our customer support is very welcoming,we will do our best to help you!</p><br /><br /><br /><br />
+          <h1>Our Office</h1>
+          <p>A Very nice office, A very nice city,A very nice Country, A very nice pincode.</p>
+        </div> */}
       </div>
       <Footer />
     </div>

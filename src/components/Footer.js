@@ -10,6 +10,7 @@ const Footer = () => (
           <li>Email: info@abccorp.com</li>
           <li>Phone: (555) 123-4567</li>
           <li>Address: 123 Main Street, Cityville, State, 12345</li>
+
         </ul>
       </div>
       <div className="menu">

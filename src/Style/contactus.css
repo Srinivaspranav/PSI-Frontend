@@ -58,9 +58,11 @@
     width: 680px;
 }
 
+
 .verticalBox {
   height: 130vh; /* Adjust the height as needed */
   width: 30vw; /* Adjust the width as needed */
+
   background-color: #051e29;
   position: relative ;
   left: 0;
@@ -71,11 +73,24 @@
   flex: 1;
 }
 
+.verticalBox2 {
+  height: 90vh; /* Adjust the height as needed */
+  width: 20vw; /* Adjust the width as needed */
+  background-color: #051e29;
+  position: relative ;
+  left: 0;
+  top: 0;
+  color: white;
+  padding: 50px;
+  line-height: 1.5;
+  flex: 1;
+  display:none;
+}
+
 /* .footerCenter ul {
   list-style-type: none;
   padding: 0;
 } */
-
 
 
 input{
@@ -159,6 +174,7 @@ input[type='textarea']::placeholder {
   /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
 }
 
+
 .submit:hover {
   border: 1px solid white;
 }
@@ -166,3 +182,6 @@ input[type='textarea']::placeholder {
 .submit:active {
   box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
+
+}
+

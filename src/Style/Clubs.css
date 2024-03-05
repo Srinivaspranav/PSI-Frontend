@@ -87,3 +87,23 @@
     padding-right: 109px;
     line-height: 1.5;
   }
+
+  .innovationheader{
+    display: "flex";
+    margin-left: "40%";
+  }
+  .iclubheading
+  {
+    font-size: "50px";
+    color: "white" ;
+  }
+.iclubbutton
+{
+  margin-left: "37%";
+  height: "50px";
+  margin-top: "7%";
+  background-color: "orange";
+  width: "120px";
+}
+
+
