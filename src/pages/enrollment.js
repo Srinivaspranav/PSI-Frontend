@@ -23,8 +23,8 @@ const Enrollment = () => {
               width: "100%",
               marginTop: "4%",
               border: "dashed",
-              backgroundColor: "#063049",  // Set text area background color
-              color: "#ffffff"  // Set text color
+              backgroundColor: "#002333", 
+              color: "#ffffff" 
             }}
             placeholder='How can we Help you?'
           ></textarea>

@@ -48,7 +48,7 @@ const ContactUs = () => {
             />
             <input style={{ marginTop: "1%", marginLeft: "11.25%" }} type="file" id="myFileInput" onChange={handleFileInputChange} />
             <div style={{ marginTop: "1%", marginLeft: "-3%" }}>
-              <input style={{ marginLeft: "-14.5%" }} id='t&c' type='checkbox' required /><label for="t&c" style={{ marginLeft: "-25.5%", color: "#00FF84" }}>I have read Dr.Pallemsetty Innovations Privacy Policy and agree to the terms and conditions.</label>
+              <input style={{ marginLeft: "-24.5%" }} id='t&c' type='checkbox' required /><label for="t&c" style={{ marginLeft: "-24.5%", color: "#00FF84" }}>I have read Dr.Pallemsetty Innovations Privacy Policy and agree to the terms and conditions.</label>
             </div>
             <button className='submit'>SUBMIT</button>
           </div>
