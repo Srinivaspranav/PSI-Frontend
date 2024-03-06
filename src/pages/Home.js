@@ -14,6 +14,10 @@ import Google from "../Images/Google.png";
 import Green from '../Images/GreenComputing.png';
 import slider1 from '../Images/Slider1.png';
 import Program1 from '../Images/Program1.png';
+import Webinar from '../Images/webinars1.png';
+import About from '../Images/About.png';
+import Course from "../Images/courses.png";
+import Workshop from "../Images/workshops.png";
 const ImageSlider = () => (
   <div className='sliderContainer'>
     <Carousel showThumbs={false} autoPlay={false} infiniteLoop interval={2000} showStatus={false} className='carouselContainer'>
@@ -57,11 +61,11 @@ const ProgramGrid = () => (
   <div className='programGrid'>
     <div className='programRow1'>
       <div className='programCard'>
-        <img alt="Program 1" src={Program1} className='programImage' />
+        <img alt="Program 1" src={Course} className='programImage' />
         <div className='programName'>Courses</div>
       </div>
       <div className='programCard pc2'>
-        <img alt="Program 2" src={Program1} className='programImage' />
+        <img alt="Program 2" src={Workshop} className='programImage' />
         <div className='programName'>Workshops</div>
       </div>
     </div>
@@ -71,7 +75,7 @@ const ProgramGrid = () => (
         <div className='programName'>Internships</div>
       </div>
       <div className='programCard pc4'>
-        <img alt="Program 4" src={Program1} className=" programImage" />
+        <img alt="Program 4"  src={Webinar} className=" programImage" />
         <div className='programName'>Webinars</div>
       </div>
     </div>
@@ -145,7 +149,7 @@ const AboutSection = () => (
         <div className='aboutSection2'>
         <img
           className='aboutusImage2'
-          src="https://cdn.discordapp.com/attachments/1205756212445192263/1205772571379769464/10.jpg?ex=65d99637&is=65c72137&hm=93b4336bbd16fc3dfb3e6ed21bdc3801a5daf7f5ba3698050ba8f3696c2d69fd&"
+        src={About}
           alt="Placeholder"
         />
           <h1 className='aboutSectionheading' >About Us</h1>
@@ -155,7 +159,7 @@ const AboutSection = () => (
         </div>
         <img
           className='aboutusImage1'
-          src="https://cdn.discordapp.com/attachments/1205756212445192263/1205772571379769464/10.jpg?ex=65d99637&is=65c72137&hm=93b4336bbd16fc3dfb3e6ed21bdc3801a5daf7f5ba3698050ba8f3696c2d69fd&"
+          src={About}
           alt="Placeholder"
         />
       </div>
