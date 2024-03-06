@@ -162,6 +162,7 @@
   }
   .programRow2 {
     display: flex;
+    margin-top:5px;
     margin: -18px;
     justify-content: space-around;
     width: 97%;
@@ -186,12 +187,12 @@
     position: relative;
     margin-left:1vw;
     top: -11%;
-    left: 15%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
   }
   
 
