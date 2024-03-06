@@ -8,7 +8,7 @@ const  NavBar =() => {
   const [icon, setIcon] = useState("nav__toggler");
   const navToggle = () => {
     if (active === "nav__menu") {
-      setActive("nav_menu nav_active");
+      setActive("nav__menu nav__active");
     } else setActive("nav__menu");
 
     // Icon Toggler
