@@ -112,13 +112,14 @@
     display: flex;
     flex-direction: row; /* Change flex direction to row */
     margin-top: 0px; /* Adjust as needed */
+    width:100%;
     height: 600px; /* Increase the height as needed */
   }
 
 .card_club {
   position: relative;
   width: 550px;
-  height: 550px;
+  height: 450px;
   background-color: #f2f2f2;
   border-radius: 0px;
   display: flex;
@@ -141,15 +142,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 
 .card_club:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px #000000;
-  background-color: #f2f2f2;
+  background-color:  black;
   color: #ffffff;
 }
 
@@ -170,6 +171,7 @@
 
 .card_club:hover .card__content {
   transform: rotateX(0deg);
+  opacity: 60%;
 }
 
 .card__title {

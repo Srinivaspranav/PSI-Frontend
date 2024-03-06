@@ -3,6 +3,9 @@ import '../Style/Clubs.css';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import '../Style/scrollbar.css';
+import Image3 from '../Images/3.png';
+import Image2 from '../Images/2.png';
+import Image1 from '../Images/1.png';
 
 const SliderContainer = () => {
   return (
@@ -121,16 +124,15 @@ const SliderContainer = () => {
 
 
 
-const Card = ({ title, description, icon }) => {
+const Card = ({ title, description, imageSrc }) => {
   return (
     <section className="card_club">
-    <img src='https://cdn.discordapp.com/attachments/1205756212445192263/1205787286873047080/12.jpg?ex=65f5536b&is=65e2de6b&hm=c79f899a279502de551372457f07b79a73acf7a53ad2a1088fd9ed313dc6e75a&' alt={title} className="card-image" />
-    <div className="card__content">
-      <h2 className="card__title">{title}</h2>
-      <p className="card__description">{description}</p>
-    </div>
-  </section>
-
+      <img src={imageSrc} alt={title} className="card-image" />
+      <div className="card__content">
+        <h2 className="card__title">{title}</h2>
+        <p className="card__description">{description}</p>
+      </div>
+    </section>
   );
 };
 
@@ -148,20 +150,20 @@ const Clubs = () => {
       <Card
         title="Innovation Club"
         description="Welcome to the Innovation Club at Dr. Palamsetty Innovations, where creativity knows no bounds."
-        imageSrc="https://cdn.discordapp.com/attachments/1211189018968989717/1214457148613066762/image.png"
+        imageSrc={Image3}
 
       />
 
       <Card
         title="Technology Club"
         description="Welcome to the Technology Club at Dr. Palamsetty Innovations, where we're passionate about all things tech."
-        v
+        imageSrc={Image1}
       />
 
       <Card
         title="Research & Development (R&D) Club"
         description="Welcome to the Research & Development (R&D) Club at Dr. Palamsetty Innovations, where curiosity meets discovery."
-        imageSrc="https://cdn.discordapp.com/attachments/1211189018968989717/1214457148613066762/image.png"
+        imageSrc={Image2}
 
       />
       </div>

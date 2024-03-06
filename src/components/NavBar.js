@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import "../Style/NavBar.css";
+import Logo from '../Images/Logo.png';
 
 const  NavBar =() => {
   const [active, setActive] = useState("nav__menu");
@@ -21,7 +22,7 @@ const  NavBar =() => {
       <a href="/" className="nav__brand">
       <img
         alt="Logo"
-        src="https://cdn.discordapp.com/attachments/1205756212445192263/1207363674990313562/Dr.Palamsetty_Innovations123.png?ex=65df600b&is=65cceb0b&hm=d8811294349ee35313077b961c60da34b5a054821e87fd435d7ed27f448f3c38&" 
+        src= {Logo}
         style={{ height: '30px', width: '120px' }}  
       />
       </a>

@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import '../Style/scrollbar.css';
 import { Link } from 'react-router-dom';
+import Mobile from '../Images/Mobile1.png';
 
 
 
@@ -50,7 +51,7 @@ const Featured = () => {
           <p className="eventDescription">Event description goes here.</p>
           <button className='button-feature'>Enroll Now  </button>
         </div>
-        <img className="eventImage" src="https://cdn.discordapp.com/attachments/1205756212445192263/1205787286873047080/12.jpg?ex=65f5536b&is=65e2de6b&hm=c79f899a279502de551372457f07b79a73acf7a53ad2a1088fd9ed313dc6e75a&" alt="Event Image" />
+        <img className="eventImage" src={Mobile} alt="Event Image" />
       </div>
     </div>
   );
