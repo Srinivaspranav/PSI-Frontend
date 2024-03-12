@@ -77,3 +77,92 @@ input[type='textarea']::placeholder {
   border-radius: 10px;
   cursor: pointer;
 }
+
+@media screen and (max-width:480px){
+  .appContact {
+    text-align: center;
+    background-color: #002333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+
+
+.enrollment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enrollment-section {
+  background-color: #002333;
+  padding: 0px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.form-box {
+  margin-top: 7%;
+  margin-left: 0%;
+  text-align: center;
+  width: 100%;
+}
+
+.form-field {
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 1%;
+  width: 90%;
+  margin-left: 4%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.textarea {
+  background-color: #002333;
+  border: dashed;
+  color: white;
+}
+input{
+  /* border: none; */
+  background-color: #002333; 
+  border-bottom-color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  margin-bottom: 17px;
+  margin-right: 0%;
+  align-items: left;
+  width:172px;
+  color: white;
+}
+
+input[type='textarea']::placeholder {
+  position: relative;
+  top: -255px;
+  left: 10px;
+  color: white;
+}
+#t&c {
+  margin-left: -24.5%;
+}
+
+.submit-btn {
+  background-color: #00ff84;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+}

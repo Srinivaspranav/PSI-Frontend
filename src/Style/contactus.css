@@ -59,8 +59,8 @@
 }
 
 
-.verticalBox {
-  height: 90vh; /* Adjust the height as needed */
+.verticalBox1 {
+  height: 117vh; /* Adjust the height as needed */
   width: 20vw; /* Adjust the width as needed */
   background-color: #051e29;
   position: relative;
@@ -182,5 +182,56 @@ input[type='textarea']::placeholder {
   box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
+@media screen and (max-width: 480px) {
+  .appContact {
+    text-align: center;
+    background-color: #002333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+    
+  }
+  .detailsSection {
+    padding: 5px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .detailsField {
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .dbox{
+    margin-top: 7%;
+    margin-left: 9%;
+    text-align: left;
+    width: 680px;
+}
 
+  .verticalBox1 {
+    height: 117vh; /* Adjust the height as needed */
+    width: 65vw; /* Adjust the width as needed */
+    background-color: #051e29;
+    position: relative;
+    left: 0;
+    top: 0;
+    color: white;
+    padding: 40px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .submit {
+    font-size: 10px; 
+  }
+}
